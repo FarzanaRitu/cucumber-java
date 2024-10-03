@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestRunner" time="32.257" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestRunner" time="64.296" tests="15" errors="3" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire13150722979068658315\surefirebooter-20241002021217672_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire13150722979068658315 2024-10-02T02-12-17_495-jvmRun1 surefire-20241002021217672_1tmp surefire_0-20241002021217672_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire11075792222683880845\surefirebooter-20241004004427284_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire11075792222683880845 2024-10-04T00-44-27_104-jvmRun1 surefire-20241004004427284_1tmp surefire_0-20241004004427284_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Projects\cucumber-java\target\test-classes;C:\Projects\cucumber-java\target\classes;C:\Users\ASUS\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ASUS\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-java\7.11.0\cucumber-java-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-core\7.11.0\cucumber-core-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin\7.11.0\cucumber-gherkin-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.0\cucumber-gherkin-messages-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\ASUS\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\ASUS\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\Users\ASUS\.m2\repository\io\cucumber\datatable\7.11.0\datatable-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-plugin\7.11.0\cucumber-plugin-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\docstring\7.11.0\docstring-7.11.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\ASUS\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-junit\7.11.0\cucumber-junit-7.11.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\ASUS\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\ASUS\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ASUS\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ASUS\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ASUS\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\ASUS\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\ASUS\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\ASUS\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\ASUS\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire13150722979068658315\surefirebooter-20241002021217672_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire11075792222683880845\surefirebooter-20241004004427284_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,68 +56,152 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Verify About Us Page" classname="Website Testing" time="4.757">
-    <system-err><![CDATA[Oct 02, 2024 2:12:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify Homepage Title" classname="Website Testing" time="7.258">
+    <system-out><![CDATA[Page Title: Shajgoj – Buy Authentic Cosmetic and Beauty Products Online in Bangladesh
+]]></system-out>
+    <system-err><![CDATA[Oct 04, 2024 12:44:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Contact Page Loads" classname="Website Testing" time="1.039">
-    <system-err><![CDATA[Oct 02, 2024 2:12:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify URL of Makeup Page" classname="Website Testing" time="6.298">
+    <system-err><![CDATA[Oct 04, 2024 12:44:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Sign Up Functionality" classname="Website Testing" time="0.86">
-    <system-err><![CDATA[Oct 02, 2024 2:12:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify Title of Makeup Page" classname="Website Testing" time="3.66">
+    <system-err><![CDATA[Oct 04, 2024 12:44:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Login Functionality" classname="Website Testing" time="3.73">
-    <system-err><![CDATA[Oct 02, 2024 2:12:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify URL of Fragrance Product Category Page" classname="Website Testing" time="6.763">
+    <system-err><![CDATA[Oct 04, 2024 12:44:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Adding Product to Cart" classname="Website Testing" time="0.771">
-    <system-err><![CDATA[Oct 02, 2024 2:12:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify Title of Fragrance Product Category Page" classname="Website Testing" time="2.876">
+    <system-err><![CDATA[Oct 04, 2024 12:44:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Removing Product from Cart" classname="Website Testing" time="0.761">
-    <system-err><![CDATA[Oct 02, 2024 2:12:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify About Us Page" classname="Website Testing" time="2.503">
+    <system-out><![CDATA[Actual header: 'About Us'
+]]></system-out>
+    <system-err><![CDATA[Oct 04, 2024 12:44:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Checkout Process" classname="Website Testing" time="0.835">
-    <system-err><![CDATA[Oct 02, 2024 2:12:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify Contact Page Loads" classname="Website Testing" time="2.453">
+    <system-out><![CDATA[Contact information content: We love to hear from you on our customer service, merchandise, website, or any topics you want to share with us. Your comments and suggestions will be appreciated.
+ +8809666737475 (10:00 am - 10:00 pm)
+ info@shajgoj.com
+  OUR SHOP ADDRESS:
+]]></system-out>
+    <system-err><![CDATA[Oct 04, 2024 12:44:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify User Profile" classname="Website Testing" time="0.852">
-    <system-err><![CDATA[Oct 02, 2024 2:12:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify clicking the cart icon opens the cart slider" classname="Website Testing" time="6.143">
+    <system-err><![CDATA[Oct 04, 2024 12:45:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Password Reset" classname="Website Testing" time="3.446">
-    <system-err><![CDATA[Oct 02, 2024 2:12:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify URL of Refund and Return Policy Page" classname="Website Testing" time="6.112">
+    <failure message="expected:&lt;...://shop.shajgoj.com/[refund-and-return-policy]&gt; but was:&lt;...://shop.shajgoj.com/[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...://shop.shajgoj.com/[refund-and-return-policy]> but was:<...://shop.shajgoj.com/[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.WebsiteTestStepDefinitions.i_should_be_redirected_to_the_refund_and_return_policy_page_url(WebsiteTestStepDefinitions.java:129)
+	at ✽.I should be redirected to the Refund and Return Policy page URL(file:///C:/Projects/cucumber-java/src/test/resources/features/website_tests.feature:42)
+]]></failure>
+    <system-err><![CDATA[Oct 04, 2024 12:45:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Newsletter Subscription" classname="Website Testing" time="4.839">
-    <system-err><![CDATA[Oct 02, 2024 2:12:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify adding a product increases the cart count" classname="Website Testing" time="5.104">
+    <system-err><![CDATA[Oct 04, 2024 12:45:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Privacy Policy Link" classname="Website Testing" time="4.959">
-    <system-err><![CDATA[Oct 02, 2024 2:12:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify removing a product decreases the cart count" classname="Website Testing" time="4.847">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;__next&apos;]/div[2]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/button[1]/span&quot;}&#10;  (Session info: chrome=129.0.6668.89)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3e27aa23b7778c355764a6ec8aaf70f1, findElement {using=xpath, value=//*[@id=&apos;__next&apos;]/div[2]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/button[1]/span}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:14157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:14157/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3e27aa23b7778c355764a6ec8aaf70f1" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='__next']/div[2]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/button[1]/span"}
+  (Session info: chrome=129.0.6668.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e27aa23b7778c355764a6ec8aaf70f1, findElement {using=xpath, value=//*[@id='__next']/div[2]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/button[1]/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:14157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:14157/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e27aa23b7778c355764a6ec8aaf70f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at stepDefinitions.WebsiteTestStepDefinitions.i_remove_a_product_from_the_cart(WebsiteTestStepDefinitions.java:380)
+	at ✽.I remove a product from the cart(file:///C:/Projects/cucumber-java/src/test/resources/features/website_tests.feature:54)
+]]></error>
+    <system-err><![CDATA[Oct 04, 2024 12:45:17 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Verify Page Not Found" classname="Website Testing" time="0.779">
-    <system-err><![CDATA[Oct 02, 2024 2:12:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify clicking the &quot;PROCEED&quot; button navigates to the checkout page" classname="Website Testing" time="4.041">
+    <error message="The step &apos;I check if the cart is empty&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@When(&quot;I check if the cart is empty&quot;)&#10;public void i_check_if_the_cart_is_empty() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I add a product to the cart if it is empty&quot;)&#10;public void i_add_a_product_to_the_cart_if_it_is_empty() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I click on the {string} button&quot;)&#10;public void i_click_on_the_button(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I should be redirected to the checkout page&quot;)&#10;public void i_should_be_redirected_to_the_checkout_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'I check if the cart is empty' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I check if the cart is empty")
+public void i_check_if_the_cart_is_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I add a product to the cart if it is empty")
+public void i_add_a_product_to_the_cart_if_it_is_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the {string} button")
+public void i_click_on_the_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be redirected to the checkout page")
+public void i_should_be_redirected_to_the_checkout_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-err><![CDATA[Oct 04, 2024 12:45:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>
-  <testcase name="Navigate to the terms and conditions page" classname="Website Testing" time="4.287">
-    <system-err><![CDATA[Oct 02, 2024 2:12:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <testcase name="Verify Privacy Policy Link" classname="Website Testing" time="0.797">
+    <error message="Cannot invoke &quot;org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)&quot; because &quot;this.wait&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.wait" is null
+	at stepDefinitions.WebsiteTestStepDefinitions.i_click_on(WebsiteTestStepDefinitions.java:435)
+	at ✽.I click on "Privacy Policy"(file:///C:/Projects/cucumber-java/src/test/resources/features/website_tests.feature:68)
+]]></error>
+    <system-err><![CDATA[Oct 04, 2024 12:45:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
+]]></system-err>
+  </testcase>
+  <testcase name="Verify Page Not Found" classname="Website Testing" time="2.562">
+    <system-err><![CDATA[Oct 04, 2024 12:45:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
+]]></system-err>
+  </testcase>
+  <testcase name="Navigate to the terms and conditions page" classname="Website Testing" time="2.548">
+    <system-err><![CDATA[Oct 04, 2024 12:45:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 129
 ]]></system-err>
   </testcase>

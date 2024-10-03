@@ -1,4 +1,73 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.26 s -- in TestRunner
+Tests run: 15, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 64.30 s <<< FAILURE! -- in TestRunner
+Website Testing.Verify URL of Refund and Return Policy Page -- Time elapsed: 6.112 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...://shop.shajgoj.com/[refund-and-return-policy]> but was:<...://shop.shajgoj.com/[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.WebsiteTestStepDefinitions.i_should_be_redirected_to_the_refund_and_return_policy_page_url(WebsiteTestStepDefinitions.java:129)
+	at ✽.I should be redirected to the Refund and Return Policy page URL(file:///C:/Projects/cucumber-java/src/test/resources/features/website_tests.feature:42)
+
+Website Testing.Verify removing a product decreases the cart count -- Time elapsed: 4.847 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='__next']/div[2]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/button[1]/span"}
+  (Session info: chrome=129.0.6668.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e27aa23b7778c355764a6ec8aaf70f1, findElement {using=xpath, value=//*[@id='__next']/div[2]/div[3]/div[2]/div[1]/div/div[1]/div[3]/div/div/button[1]/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:14157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:14157/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e27aa23b7778c355764a6ec8aaf70f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at stepDefinitions.WebsiteTestStepDefinitions.i_remove_a_product_from_the_cart(WebsiteTestStepDefinitions.java:380)
+	at ✽.I remove a product from the cart(file:///C:/Projects/cucumber-java/src/test/resources/features/website_tests.feature:54)
+
+Website Testing.Verify clicking the "PROCEED" button navigates to the checkout page -- Time elapsed: 4.041 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I check if the cart is empty' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("I check if the cart is empty")
+public void i_check_if_the_cart_is_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I add a product to the cart if it is empty")
+public void i_add_a_product_to_the_cart_if_it_is_empty() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click on the {string} button")
+public void i_click_on_the_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should be redirected to the checkout page")
+public void i_should_be_redirected_to_the_checkout_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Website Testing.Verify Privacy Policy Link -- Time elapsed: 0.797 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.wait" is null
+	at stepDefinitions.WebsiteTestStepDefinitions.i_click_on(WebsiteTestStepDefinitions.java:435)
+	at ✽.I click on "Privacy Policy"(file:///C:/Projects/cucumber-java/src/test/resources/features/website_tests.feature:68)
+

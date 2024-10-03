@@ -1,6 +1,27 @@
 Feature: Website Testing
 
- 
+ Scenario: Verify Homepage Title
+    Given I am on the homepage
+    Then I should retrieve the page title
+ Scenario: Verify URL of Makeup Page
+    Given I am on the homepage for make up url
+    When I click on the Makeup link
+    Then I should be redirected to the Makeup page URL
+
+  Scenario: Verify Title of Makeup Page
+    Given I am on the homepage for make up title
+    When I click on the Makeup link
+    Then the page title should be "Makeup"
+
+   Scenario: Verify URL of Fragrance Product Category Page
+    Given I am on the homepage for Fragrance link
+    When I click on the Fragrance link
+    Then I should be redirected to the Fragrance page URL
+
+  Scenario: Verify Title of Fragrance Product Category Page
+    Given I am on the homepage for Fragrance title
+    When I click on the Fragrance link
+    Then the page title should be again "fragrance"
 
   Scenario: Verify About Us Page
     Given I navigate to the About Us page
@@ -10,57 +31,40 @@ Feature: Website Testing
     Given I navigate to the Contact page
     Then I should see the contact form
 
-  Scenario: Verify Sign Up Functionality
-    Given I am on the Sign Up page
-    When I fill in "username" with "testuser"
-    And I fill in "password" with "password123"
-    And I click the "Sign Up" button
-    Then I should see a success message
-
-  Scenario: Verify Login Functionality
-    Given I am on the Login page
-    When I fill in "username" with "testuser"
-    And I fill in "password" with "password123"
-    And I click the "Login" button
-    Then I should be redirected to the dashboard
+ 
+  Scenario: Verify clicking the cart icon opens the cart slider
+    Given I am on the product category page for Mom & Baby
+    When I click on the cart icon
+    Then I should see the cart slider with the header "CART"
+   Scenario: Verify URL of Refund and Return Policy Page
+    Given I am on the homepage for refund
+    When I click on the Refund and Return Policy link
+    Then I should be redirected to the Refund and Return Policy page URL
 
   
+  Scenario: Verify adding a product increases the cart count
+    Given I am on the Mom & Baby product category page
+    When I check the cart count
+    And I click on the "ADD TO CART" button of the first product
+    Then I should see the cart count increased by 1
+     
+  Scenario: Verify removing a product decreases the cart count
+    Given I am on the Mom & Baby product category page again
+    When I open the cart slider
+    And I remove a product from the cart
+    Then I should see the cart count decreased by 1
 
-  Scenario: Verify Adding Product to Cart
-    Given I am on a product page
-    When I click the "Add to Cart" button
-    Then the cart count should increase
-
-  Scenario: Verify Removing Product from Cart
-    Given I have a product in my cart
-    When I click the "Remove from Cart" button
-    Then the cart count should decrease
-
-  Scenario: Verify Checkout Process
-    Given I have products in my cart
-    When I proceed to checkout
-    Then I should see the checkout page
-
-  Scenario: Verify User Profile
-    Given I am logged in
-    When I navigate to my profile
-    Then I should see my account details
-
-  Scenario: Verify Password Reset
-    Given I am on the Login page
-    When I click on "Forgot Password"
-    Then I should see a password reset form
-
-  Scenario: Verify Newsletter Subscription
-    Given I am on the homepage
-    When I enter my email in the newsletter subscription box
-    And I click the "Subscribe" button
-    Then I should see a confirmation message
-
+   Scenario: Verify clicking the "PROCEED" button navigates to the checkout page
+    Given I am on the Mom & Baby product category page
+    When I check if the cart is empty
+    And I add a product to the cart if it is empty
+    And I open the cart slider
+    And I click on the "PROCEED" button
+    Then I should be redirected to the checkout page
  
 
   Scenario: Verify Privacy Policy Link
-    Given I am on the homepage
+    I am on the homepage for privacy policy
     When I click on "Privacy Policy"
     Then I should be redirected to the privacy policy page
 
